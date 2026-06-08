@@ -1,0 +1,7 @@
+/* WheelMatch AI — Webfonts
+ * Display + UI: Schibsted Grotesk (modern grotesque, professional, distinctive)
+ * Data / scores / technical: JetBrains Mono
+ * Loaded via Google Fonts CDN. To self-host, replace the @import below with
+ * local @font-face rules pointing at woff2 binaries.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');

@@ -1,0 +1,40 @@
+<!-- @dsCard group="Colors" viewport="700x170" name="Semantic" subtitle="Success, warning, danger & info" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; font-family: var(--font-sans); background: var(--surface-card); color: var(--text-body); padding: 20px; }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .col .stack { display: flex; border-radius: var(--radius-md); overflow: hidden; border: 1px solid rgba(15,23,42,.08); }
+  .stack > div { flex: 1; height: 48px; }
+  .head { font-size: 12px; font-weight: 700; color: var(--text-strong); margin-bottom: 8px; }
+  .hex { font-family: var(--font-mono); font-size: 10px; color: var(--text-muted); margin-top: 6px; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="col">
+      <div class="head" style="color:var(--success-700)">Success</div>
+      <div class="stack"><div style="background:var(--success-700)"></div><div style="background:var(--success-500)"></div><div style="background:var(--success-100)"></div><div style="background:var(--success-50)"></div></div>
+      <div class="hex">700 · 500 · 100 · 50</div>
+    </div>
+    <div class="col">
+      <div class="head" style="color:var(--warning-700)">Warning</div>
+      <div class="stack"><div style="background:var(--warning-700)"></div><div style="background:var(--warning-500)"></div><div style="background:var(--warning-100)"></div><div style="background:var(--warning-50)"></div></div>
+      <div class="hex">700 · 500 · 100 · 50</div>
+    </div>
+    <div class="col">
+      <div class="head" style="color:var(--danger-700)">Danger</div>
+      <div class="stack"><div style="background:var(--danger-700)"></div><div style="background:var(--danger-500)"></div><div style="background:var(--danger-100)"></div><div style="background:var(--danger-50)"></div></div>
+      <div class="hex">700 · 500 · 100 · 50</div>
+    </div>
+    <div class="col">
+      <div class="head" style="color:var(--info-600)">Info</div>
+      <div class="stack"><div style="background:var(--info-600)"></div><div style="background:var(--info-100)"></div><div style="background:var(--info-50)"></div></div>
+      <div class="hex">600 · 100 · 50</div>
+    </div>
+  </div>
+</body>
+</html>

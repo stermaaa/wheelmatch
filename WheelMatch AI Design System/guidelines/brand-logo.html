@@ -1,0 +1,34 @@
+<!-- @dsCard group="Brand" viewport="700x230" name="Logo & lockup" subtitle="Mark, wordmark, and reversed on navy" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; font-family: var(--font-sans); background: var(--surface-card); color: var(--text-strong); padding: 24px; }
+  .row { display: flex; align-items: center; gap: 40px; flex-wrap: wrap; }
+  .lockup { display: inline-flex; align-items: center; gap: 12px; }
+  .wm { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; }
+  .wm .ai { color: var(--primary-600); }
+  .panel { background: var(--navy-900); border-radius: var(--radius-xl); padding: 20px 26px; display: inline-flex; align-items: center; gap: 12px; }
+  .panel .wm { color: #fff; }
+  .panel .ai { color: var(--primary-400); }
+  .label { font-size: 11px; font-weight: 700; letter-spacing: var(--ls-caps); text-transform: uppercase; color: var(--text-faint); margin: 0 0 14px; }
+</style>
+</head>
+<body>
+  <p class="label">Primary lockup</p>
+  <div class="row">
+    <div class="lockup">
+      <img src="../assets/logo-mark.svg" width="44" height="44" alt="WheelMatch AI">
+      <span class="wm">WheelMatch <span class="ai">AI</span></span>
+    </div>
+    <img src="../assets/logo-mark.svg" width="44" height="44" alt="mark">
+  </div>
+  <p class="label" style="margin-top:26px">Reversed</p>
+  <div class="panel">
+    <img src="../assets/logo-mark-light.svg" width="40" height="40" alt="WheelMatch AI">
+    <span class="wm">WheelMatch <span class="ai">AI</span></span>
+  </div>
+</body>
+</html>

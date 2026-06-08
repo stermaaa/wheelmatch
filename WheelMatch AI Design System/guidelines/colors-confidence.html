@@ -1,0 +1,35 @@
+<!-- @dsCard group="Colors" viewport="700x200" name="Confidence system" subtitle="Anti-hallucination — the signature pattern" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; font-family: var(--font-sans); background: var(--surface-card); color: var(--text-body); padding: 20px; }
+  .label { font-size: 11px; font-weight: 700; letter-spacing: var(--ls-caps); text-transform: uppercase; color: var(--text-faint); margin: 0 0 14px; }
+  .badges { display: flex; gap: 14px; flex-wrap: wrap; }
+  .badge { display: inline-flex; align-items: center; gap: 7px; padding: 7px 13px; border-radius: var(--radius-full); font-size: 13px; font-weight: 600; border: 1px solid; }
+  .dot { width: 8px; height: 8px; border-radius: 999px; }
+  .desc { font-size: 12px; color: var(--text-muted); margin-top: 8px; max-width: 200px; }
+  .item { }
+  .wrap { display: flex; gap: 22px; }
+</style>
+</head>
+<body>
+  <p class="label">Trois états de confiance</p>
+  <div class="wrap">
+    <div class="item">
+      <span class="badge" style="color:var(--confidence-confirmed-fg);background:var(--confidence-confirmed-bg);border-color:var(--confidence-confirmed-bd)"><span class="dot" style="background:var(--success-500)"></span>Confirmé dans le CV</span>
+      <p class="desc">Le fait est directement sourcé dans le document candidat.</p>
+    </div>
+    <div class="item">
+      <span class="badge" style="color:var(--confidence-pending-fg);background:var(--confidence-pending-bg);border-color:var(--confidence-pending-bd)"><span class="dot" style="background:var(--warning-500)"></span>À confirmer</span>
+      <p class="desc">Probable mais non prouvé — à valider avec le candidat.</p>
+    </div>
+    <div class="item">
+      <span class="badge" style="color:var(--confidence-absent-fg);background:var(--confidence-absent-bg);border-color:var(--confidence-absent-bd)"><span class="dot" style="background:var(--slate-400)"></span>Absent du CV</span>
+      <p class="desc">Non mentionné — l'IA ne l'inventera jamais.</p>
+    </div>
+  </div>
+</body>
+</html>

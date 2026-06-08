@@ -1,0 +1,37 @@
+<!-- @dsCard group="Colors" viewport="700x180" name="Primary & AI accent" subtitle="Indigo-blue actions, violet for AI moments" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; font-family: var(--font-sans); background: var(--surface-card); color: var(--text-body); padding: 20px; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; }
+  .row + .row { margin-top: 14px; }
+  .sw { width: 96px; }
+  .chip { height: 52px; border-radius: var(--radius-md); border: 1px solid rgba(15,23,42,.06); }
+  .name { font-size: 11px; font-weight: 600; color: var(--text-strong); margin-top: 6px; }
+  .hex { font-family: var(--font-mono); font-size: 10px; color: var(--text-muted); }
+  .label { font-size: 11px; font-weight: 700; letter-spacing: var(--ls-caps); text-transform: uppercase; color: var(--text-faint); margin: 0 0 10px; }
+</style>
+</head>
+<body>
+  <p class="label">Primary · indigo-blue</p>
+  <div class="row">
+    <div class="sw"><div class="chip" style="background:var(--primary-900)"></div><div class="name">900</div><div class="hex">#16267A</div></div>
+    <div class="sw"><div class="chip" style="background:var(--primary-700)"></div><div class="name">700</div><div class="hex">#2343BE</div></div>
+    <div class="sw"><div class="chip" style="background:var(--primary-600)"></div><div class="name">600 · base</div><div class="hex">#2A52E0</div></div>
+    <div class="sw"><div class="chip" style="background:var(--primary-400)"></div><div class="name">400</div><div class="hex">#7B96F6</div></div>
+    <div class="sw"><div class="chip" style="background:var(--primary-100)"></div><div class="name">100</div><div class="hex">#DEE6FE</div></div>
+    <div class="sw"><div class="chip" style="background:var(--primary-50)"></div><div class="name">50</div><div class="hex">#EEF2FF</div></div>
+  </div>
+  <p class="label" style="margin-top:18px">AI accent · violet</p>
+  <div class="row">
+    <div class="sw"><div class="chip" style="background:var(--ai-700)"></div><div class="name">700</div><div class="hex">#6D28D9</div></div>
+    <div class="sw"><div class="chip" style="background:var(--ai-600)"></div><div class="name">600 · base</div><div class="hex">#7C3AED</div></div>
+    <div class="sw"><div class="chip" style="background:var(--ai-500)"></div><div class="name">500</div><div class="hex">#9061F9</div></div>
+    <div class="sw"><div class="chip" style="background:var(--ai-100)"></div><div class="name">100</div><div class="hex">#ECE3FE</div></div>
+    <div class="sw"><div class="chip" style="background:var(--ai-50)"></div><div class="name">50</div><div class="hex">#F5F0FF</div></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+/* WheelMatch AI — Color tokens
+ * Light, premium B2B SaaS. Cool slate neutrals + trustworthy indigo-blue primary,
+ * AI violet accent, and a confidence semantic system (green / amber / red-grey)
+ * built specifically for the anti-hallucination UX.
+ */
+:root {
+  /* ---- Neutrals (cool slate) ---- */
+  --slate-950: #0A0F1C;
+  --slate-900: #0F172A;
+  --slate-800: #1E293B;
+  --slate-700: #334155;
+  --slate-600: #475569;
+  --slate-500: #64748B;
+  --slate-400: #94A3B8;
+  --slate-300: #CBD5E1;
+  --slate-200: #E2E8F0;
+  --slate-150: #EAEEF4;
+  --slate-100: #F1F5F9;
+  --slate-50:  #F8FAFC;
+  --white:     #FFFFFF;
+
+  /* ---- Primary — trustworthy indigo-blue ---- */
+  --primary-900: #16267A;
+  --primary-800: #1C3399;
+  --primary-700: #2343BE;
+  --primary-600: #2A52E0; /* main action */
+  --primary-500: #4A6FF0;
+  --primary-400: #7B96F6;
+  --primary-100: #DEE6FE;
+  --primary-50:  #EEF2FF;
+
+  /* ---- Navy — deep brand surface ---- */
+  --navy-900: #0B1330;
+  --navy-800: #111C44;
+  --navy-700: #16265C;
+
+  /* ---- AI accent — violet ---- */
+  --ai-700: #6D28D9;
+  --ai-600: #7C3AED;
+  --ai-500: #9061F9;
+  --ai-100: #ECE3FE;
+  --ai-50:  #F5F0FF;
+
+  /* ---- Semantic: Confirmed (green) ---- */
+  --success-700: #0F7A48;
+  --success-600: #14945A;
+  --success-500: #1BAE6B;
+  --success-100: #D5F2E3;
+  --success-50:  #ECF9F2;
+
+  /* ---- Semantic: To confirm (amber) ---- */
+  --warning-700: #B0760A;
+  --warning-600: #D08B0C;
+  --warning-500: #F0A91B;
+  --warning-100: #FCEDC9;
+  --warning-50:  #FEF8EB;
+
+  /* ---- Semantic: Absent / danger (red) ---- */
+  --danger-700: #B42318;
+  --danger-600: #D63A2E;
+  --danger-500: #EF5347;
+  --danger-100: #FBDDDB;
+  --danger-50:  #FDF0EF;
+
+  /* ---- Semantic: Info (cyan-blue) ---- */
+  --info-600: #0E7CC0;
+  --info-100: #D3ECF9;
+  --info-50:  #ECF6FC;
+
+  /* ================= Semantic aliases ================= */
+  --bg-app:          var(--slate-50);
+  --bg-app-tint:     #F4F7FB;
+  --surface-card:    var(--white);
+  --surface-raised:  var(--white);
+  --surface-sunken:  var(--slate-100);
+  --surface-inset:   var(--slate-50);
+  --surface-brand:   var(--navy-900);
+  --surface-ai-tint: var(--ai-50);
+
+  --border-subtle:   var(--slate-200);
+  --border-default:  var(--slate-300);
+  --border-strong:   var(--slate-400);
+  --border-brand:    var(--primary-600);
+
+  --text-strong:     var(--slate-900);
+  --text-body:       var(--slate-700);
+  --text-muted:      var(--slate-500);
+  --text-faint:      var(--slate-400);
+  --text-on-primary: var(--white);
+  --text-on-brand:   #DCE4FB;
+  --text-link:       var(--primary-600);
+
+  --accent-primary:  var(--primary-600);
+  --accent-ai:       var(--ai-600);
+
+  /* Confidence system (anti-hallucination) */
+  --confidence-confirmed-fg: var(--success-700);
+  --confidence-confirmed-bg: var(--success-50);
+  --confidence-confirmed-bd: var(--success-100);
+  --confidence-pending-fg:   var(--warning-700);
+  --confidence-pending-bg:   var(--warning-50);
+  --confidence-pending-bd:   var(--warning-100);
+  --confidence-absent-fg:    var(--slate-500);
+  --confidence-absent-bg:    var(--slate-100);
+  --confidence-absent-bd:    var(--slate-200);
+
+  /* Score scale (gauge) */
+  --score-high:   var(--success-500);
+  --score-mid:    var(--warning-500);
+  --score-low:    var(--danger-500);
+  --score-track:  var(--slate-200);
+
+  --focus-ring:   0 0 0 3px rgba(42, 82, 224, 0.22);
+}

@@ -1,0 +1,26 @@
+<!-- @dsCard group="Type" viewport="700x250" name="Body & labels" subtitle="UI text, captions, overlines" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; font-family: var(--font-sans); background: var(--surface-card); color: var(--text-body); padding: 22px; }
+  .spec { display: flex; align-items: baseline; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border-subtle); }
+  .spec:last-child { border-bottom: 0; }
+  .meta { font-family: var(--font-mono); font-size: 10px; color: var(--text-faint); width: 130px; flex: none; }
+  .blg { font-size: var(--fs-body-lg); line-height: var(--lh-normal); color: var(--text-strong); }
+  .bd  { font-size: var(--fs-body); line-height: var(--lh-normal); }
+  .sm  { font-size: var(--fs-sm); color: var(--text-muted); }
+  .xs  { font-size: var(--fs-xs); color: var(--text-muted); }
+  .ov  { font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--ls-caps); text-transform: uppercase; color: var(--text-faint); }
+</style>
+</head>
+<body>
+  <div class="spec"><span class="meta">Body LG · 16</span><span class="blg">Collez une fiche mission, l'IA en extrait les critères.</span></div>
+  <div class="spec"><span class="meta">Body · 15</span><span class="bd">Profil aligné sur 6 des 7 compétences obligatoires.</span></div>
+  <div class="spec"><span class="meta">Small · 13</span><span class="sm">Disponible sous 2 semaines · TJM 650€</span></div>
+  <div class="spec"><span class="meta">XS · 12</span><span class="xs">Dernière mise à jour il y a 3 jours</span></div>
+  <div class="spec"><span class="meta">Overline · 11</span><span class="ov">Points à clarifier</span></div>
+</body>
+</html>

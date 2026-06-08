@@ -1,0 +1,53 @@
+<!-- @dsCard group="Components" viewport="700x320" name="Scores & confidence" subtitle="ScoreGauge, ScoreBar, ConfidenceBadge, StatCard" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body { margin: 0; font-family: var(--font-sans); background: var(--bg-app); color: var(--text-body); padding: 22px; }
+  .label { font-size: 11px; font-weight: 700; letter-spacing: var(--ls-caps); text-transform: uppercase; color: var(--text-faint); margin: 0 0 12px; }
+  .row { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; margin-bottom: 22px; }
+</style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script src="../../_ds_bundle.js"></script>
+  <script type="text/babel">
+    const { ScoreGauge, ScoreBar, ConfidenceBadge, StatCard } = window.WheelMatchAIDesignSystem_84fa8f;
+    function Demo() {
+      return (
+        <div>
+          <div className="row">
+            <ScoreGauge value={91} size={104} label="Matching" />
+            <ScoreGauge value={72} size={104} label="Matching" />
+            <ScoreGauge value={58} size={104} label="Matching" />
+            <div style={{flex:1,minWidth:240,display:'flex',flexDirection:'column',gap:9}}>
+              <ScoreBar label="Compétences" value={94} />
+              <ScoreBar label="Séniorité" value={88} />
+              <ScoreBar label="Secteur" value={70} />
+              <ScoreBar label="Disponibilité" value={55} />
+            </div>
+          </div>
+          <p className="label">Confiance · anti-hallucination</p>
+          <div className="row" style={{gap:12,marginBottom:22}}>
+            <ConfidenceBadge state="confirmed" />
+            <ConfidenceBadge state="pending">Kubernetes à confirmer</ConfidenceBadge>
+            <ConfidenceBadge state="absent" />
+          </div>
+          <p className="label">KPI</p>
+          <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:14}}>
+            <StatCard label="Missions actives" value="14" trend="+3" accent="primary" />
+            <StatCard label="Matching moyen" value="82" unit="%" trend="+4" accent="success" />
+            <StatCard label="CV générés" value="47" trend="+12" accent="ai" />
+          </div>
+        </div>
+      );
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+  </script>
+</body>
+</html>

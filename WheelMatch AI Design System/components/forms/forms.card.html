@@ -1,0 +1,46 @@
+<!-- @dsCard group="Components" viewport="700x300" name="Form controls" subtitle="Input, Select, Textarea, Checkbox, Switch" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body { margin: 0; font-family: var(--font-sans); background: var(--surface-card); color: var(--text-body); padding: 22px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 28px; max-width: 640px; }
+  .stack { display: flex; flex-direction: column; gap: 14px; }
+</style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script src="../../_ds_bundle.js"></script>
+  <script type="text/babel">
+    const { Input, Select, Textarea, Checkbox, Switch } = window.WheelMatchAIDesignSystem_84fa8f;
+    function Demo() {
+      const [anon, setAnon] = React.useState(true);
+      const [chk, setChk] = React.useState(true);
+      return (
+        <div className="grid">
+          <div className="stack">
+            <Input label="TJM cible" placeholder="650" hint="Hors frais d'agence" />
+            <Select label="Séniorité" options={["Junior","Confirmé","Senior","Lead / Architecte"]} />
+          </div>
+          <div className="stack">
+            <Textarea label="Fiche mission" rows={3} placeholder="Collez le brief client…" />
+          </div>
+          <div className="stack" style={{gridColumn:'1 / -1'}}>
+            <div style={{display:'flex',gap:28,alignItems:'center',flexWrap:'wrap'}}>
+              <Checkbox label="Disponibilité confirmée" checked={chk} onChange={e=>setChk(e.target.checked)} tone="success" />
+              <Checkbox label="Mobilité Lille" checked={false} onChange={()=>{}} />
+              <Switch label="Anonymiser le profil" checked={anon} onChange={setAnon} tone="ai" />
+            </div>
+          </div>
+        </div>
+      );
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+  </script>
+</body>
+</html>

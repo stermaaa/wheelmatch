@@ -1,0 +1,23 @@
+<!-- @dsCard group="Spacing" viewport="700x170" name="Radii" subtitle="Corner radius scale" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; font-family: var(--font-sans); background: var(--surface-card); color: var(--text-body); padding: 22px; display: flex; gap: 22px; flex-wrap: wrap; }
+  .item { text-align: center; }
+  .box { width: 76px; height: 60px; background: var(--primary-50); border: 1.5px solid var(--primary-400); }
+  .tok { font-family: var(--font-mono); font-size: 11px; color: var(--text-strong); margin-top: 8px; }
+  .val { font-family: var(--font-mono); font-size: 10px; color: var(--text-faint); }
+</style>
+</head>
+<body>
+  <div class="item"><div class="box" style="border-radius:var(--radius-sm)"></div><div class="tok">sm</div><div class="val">6px</div></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-md)"></div><div class="tok">md</div><div class="val">8px</div></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-lg)"></div><div class="tok">lg</div><div class="val">12px</div></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-xl)"></div><div class="tok">xl</div><div class="val">16px</div></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-2xl)"></div><div class="tok">2xl</div><div class="val">20px</div></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-full)"></div><div class="tok">full</div><div class="val">999px</div></div>
+</body>
+</html>
